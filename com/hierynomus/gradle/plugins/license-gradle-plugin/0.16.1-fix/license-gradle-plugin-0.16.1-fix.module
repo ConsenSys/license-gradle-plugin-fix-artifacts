@@ -1,0 +1,93 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.hierynomus.gradle.plugins",
+    "module": "license-gradle-plugin",
+    "version": "0.16.1-fix",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "license-gradle-plugin-0.16.1-fix.jar",
+          "url": "license-gradle-plugin-0.16.1-fix.jar",
+          "size": 331513,
+          "sha512": "ff9ad715e0654b8ac183b55ac0d30605e86b9cd44f7d05960fba7ff6e5ef0d23422a8f1cb2d07571ee591f856bf34298f85eda2e84b7d6d6d7e7d1e9c5891f70",
+          "sha256": "6611c2acc163ba13038ca8e0a9b2a05fb5e7245481986eb23f0acc47dc63aeea",
+          "sha1": "22967d93f3838842274f0993a77a007f35319de6",
+          "md5": "ca332abbda2940f14bfe747dad6aa397"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.codehaus.plexus",
+          "module": "plexus-utils",
+          "version": {
+            "requires": "2.0.5"
+          }
+        },
+        {
+          "group": "com.mycila.xmltool",
+          "module": "xmltool",
+          "version": {
+            "requires": "3.3"
+          }
+        },
+        {
+          "group": "com.mycila",
+          "module": "license-maven-plugin",
+          "version": {
+            "requires": "3.0"
+          },
+          "excludes": [
+            {
+              "group": "org.apache.maven",
+              "module": "maven-plugin-api"
+            },
+            {
+              "group": "org.apache.maven",
+              "module": "maven-project"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "license-gradle-plugin-0.16.1-fix.jar",
+          "url": "license-gradle-plugin-0.16.1-fix.jar",
+          "size": 331513,
+          "sha512": "ff9ad715e0654b8ac183b55ac0d30605e86b9cd44f7d05960fba7ff6e5ef0d23422a8f1cb2d07571ee591f856bf34298f85eda2e84b7d6d6d7e7d1e9c5891f70",
+          "sha256": "6611c2acc163ba13038ca8e0a9b2a05fb5e7245481986eb23f0acc47dc63aeea",
+          "sha1": "22967d93f3838842274f0993a77a007f35319de6",
+          "md5": "ca332abbda2940f14bfe747dad6aa397"
+        }
+      ]
+    }
+  ]
+}
